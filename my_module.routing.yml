@@ -1,0 +1,15 @@
+my_module_page:
+  path: 'cache-demo'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\CacheDemoController::index'
+    _title: 'Cache demo'
+  requirements:
+    _permission: 'access content'
+
+my_module_page_invalidate_cache:
+  path: 'invalide-cache-demo'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\CacheDemoController::invalidatemycache'
+    _title: 'Invalidate Cache demo'
+  requirements:
+    _permission: 'access content'    
